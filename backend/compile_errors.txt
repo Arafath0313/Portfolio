@@ -1,0 +1,640 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.arafath:portfolio >------------------------
+[INFO] Building portfolio 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ portfolio ---
+[INFO] Deleting C:\Users\arafa\Desktop\Portfolio\backend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ portfolio ---
+[INFO] Copying 4 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ portfolio ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 197 source files with javac [debug parameters release 21] to target\classes
+[INFO] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/config/SecurityConfig.java: C:\Users\arafa\Desktop\Portfolio\backend\src\main\java\com\arafath\portfolio\security\config\SecurityConfig.java uses or overrides a deprecated API.
+[INFO] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/config/SecurityConfig.java: Recompile with -Xlint:deprecation for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/auth/AuthenticationController.java:[51,33] cannot access com.arafath.portfolio.security.auth.LoginRequest
+  bad source file: C:\Users\arafa\Desktop\Portfolio\backend\src\main\java\com\arafath\portfolio\security\auth\LoginRequest.java
+    file does not contain class com.arafath.portfolio.security.auth.LoginRequest
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ApiResponse.java:[38,27] cannot find symbol
+  symbol:   method <T>builder()
+  location: class com.arafath.portfolio.common.response.ApiResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ApiResponse.java:[50,27] cannot find symbol
+  symbol:   method <T>builder()
+  location: class com.arafath.portfolio.common.response.ApiResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ApiResponse.java:[62,27] cannot find symbol
+  symbol:   method <T>builder()
+  location: class com.arafath.portfolio.common.response.ApiResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ApiResponse.java:[74,27] cannot find symbol
+  symbol:   method <T>builder()
+  location: class com.arafath.portfolio.common.response.ApiResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ErrorResponse.java:[53,29] cannot find symbol
+  symbol:   method builder()
+  location: class com.arafath.portfolio.common.response.ErrorResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ErrorResponse.java:[72,29] cannot find symbol
+  symbol:   method builder()
+  location: class com.arafath.portfolio.common.response.ErrorResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/auth/AuthenticationService.java:[43,40] cannot find symbol
+  symbol:   method getAdmin()
+  location: variable authenticatedUser of type com.arafath.portfolio.security.user.AuthenticatedUser
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/auth/AuthenticationService.java:[45,14] cannot find symbol
+  symbol:   method setLastLogin(java.time.LocalDateTime)
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/auth/AuthenticationService.java:[50,29] cannot find symbol
+  symbol:   method builder()
+  location: class com.arafath.portfolio.security.auth.LoginResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/filter/JwtAuthenticationFilter.java:[65,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.security.filter.JwtAuthenticationFilter
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/handler/JwtAuthenticationEntryPoint.java:[36,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.security.handler.JwtAuthenticationEntryPoint
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/handler/JwtAccessDeniedHandler.java:[36,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.security.handler.JwtAccessDeniedHandler
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[49,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.security.initializer.AdminInitializer
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[56,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.security.initializer.AdminInitializer
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[61,14] cannot find symbol
+  symbol:   method setUsername(java.lang.String)
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[62,14] cannot find symbol
+  symbol:   method setEmail(java.lang.String)
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[63,14] cannot find symbol
+  symbol:   method setPassword(java.lang.String)
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[64,14] cannot find symbol
+  symbol:   method setRole(com.arafath.portfolio.enums.Role)
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[65,14] cannot find symbol
+  symbol:   method setEnabled(java.lang.Boolean)
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[69,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.security.initializer.AdminInitializer
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/user/AuthenticatedUser.java:[24,59] cannot find symbol
+  symbol:   method getRole()
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/user/AuthenticatedUser.java:[30,21] cannot find symbol
+  symbol:   method getPassword()
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/user/AuthenticatedUser.java:[35,21] cannot find symbol
+  symbol:   method getUsername()
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/user/AuthenticatedUser.java:[55,41] cannot find symbol
+  symbol:   method getEnabled()
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[28,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[28,69] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[32,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[39,50] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[41,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[41,61] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[46,28] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[54,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[54,77] cannot find symbol
+  symbol:   method getId()
+  location: variable about of type com.arafath.portfolio.entity.About
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[63,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[68,21] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[77,58] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[79,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[79,61] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[84,28] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[94,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[94,77] cannot find symbol
+  symbol:   method getId()
+  location: variable about of type com.arafath.portfolio.entity.About
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[104,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[108,21] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[116,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[126,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[130,21] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[136,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[146,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[150,21] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[160,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[33,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[33,68] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[35,53] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[36,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[36,64] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[37,78] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[40,50] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[41,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[41,61] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[42,75] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[46,57] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[49,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[49,73] cannot find symbol
+  symbol:   method getId()
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[57,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[61,51] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[64,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[64,64] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[65,78] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[68,48] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[71,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[71,61] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[72,75] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[76,57] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[79,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[79,73] cannot find symbol
+  symbol:   method getId()
+  location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[88,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[92,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[101,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[105,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[115,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[120,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[126,21] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[31,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[31,65] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[33,66] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[34,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[34,74] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[35,81] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[41,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[41,76] cannot find symbol
+  symbol:   method getId()
+  location: variable category of type com.arafath.portfolio.entity.BlogCategory
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[49,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[53,74] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[54,13] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[54,74] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[55,81] cannot find symbol
+  symbol:   method getName()
+  location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[61,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[61,76] cannot find symbol
+  symbol:   method getId()
+  location: variable category of type com.arafath.portfolio.entity.BlogCategory
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[70,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[74,9] cannot find symbol
+  symbol:   variable log
+  location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.629 s
+[INFO] Finished at: 2026-06-30T13:24:32+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.0:compile (default-compile) on project portfolio: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/auth/AuthenticationController.java:[51,33] cannot access com.arafath.portfolio.security.auth.LoginRequest
+[ERROR]   bad source file: C:\Users\arafa\Desktop\Portfolio\backend\src\main\java\com\arafath\portfolio\security\auth\LoginRequest.java
+[ERROR]     file does not contain class com.arafath.portfolio.security.auth.LoginRequest
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ApiResponse.java:[38,27] cannot find symbol
+[ERROR]   symbol:   method <T>builder()
+[ERROR]   location: class com.arafath.portfolio.common.response.ApiResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ApiResponse.java:[50,27] cannot find symbol
+[ERROR]   symbol:   method <T>builder()
+[ERROR]   location: class com.arafath.portfolio.common.response.ApiResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ApiResponse.java:[62,27] cannot find symbol
+[ERROR]   symbol:   method <T>builder()
+[ERROR]   location: class com.arafath.portfolio.common.response.ApiResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ApiResponse.java:[74,27] cannot find symbol
+[ERROR]   symbol:   method <T>builder()
+[ERROR]   location: class com.arafath.portfolio.common.response.ApiResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ErrorResponse.java:[53,29] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.arafath.portfolio.common.response.ErrorResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/common/response/ErrorResponse.java:[72,29] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.arafath.portfolio.common.response.ErrorResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/auth/AuthenticationService.java:[43,40] cannot find symbol
+[ERROR]   symbol:   method getAdmin()
+[ERROR]   location: variable authenticatedUser of type com.arafath.portfolio.security.user.AuthenticatedUser
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/auth/AuthenticationService.java:[45,14] cannot find symbol
+[ERROR]   symbol:   method setLastLogin(java.time.LocalDateTime)
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/auth/AuthenticationService.java:[50,29] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.arafath.portfolio.security.auth.LoginResponse
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/filter/JwtAuthenticationFilter.java:[65,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.security.filter.JwtAuthenticationFilter
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/handler/JwtAuthenticationEntryPoint.java:[36,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.security.handler.JwtAuthenticationEntryPoint
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/handler/JwtAccessDeniedHandler.java:[36,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.security.handler.JwtAccessDeniedHandler
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[49,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.security.initializer.AdminInitializer
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[56,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.security.initializer.AdminInitializer
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[61,14] cannot find symbol
+[ERROR]   symbol:   method setUsername(java.lang.String)
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[62,14] cannot find symbol
+[ERROR]   symbol:   method setEmail(java.lang.String)
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[63,14] cannot find symbol
+[ERROR]   symbol:   method setPassword(java.lang.String)
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[64,14] cannot find symbol
+[ERROR]   symbol:   method setRole(com.arafath.portfolio.enums.Role)
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[65,14] cannot find symbol
+[ERROR]   symbol:   method setEnabled(java.lang.Boolean)
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/initializer/AdminInitializer.java:[69,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.security.initializer.AdminInitializer
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/user/AuthenticatedUser.java:[24,59] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/user/AuthenticatedUser.java:[30,21] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/user/AuthenticatedUser.java:[35,21] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/security/user/AuthenticatedUser.java:[55,41] cannot find symbol
+[ERROR]   symbol:   method getEnabled()
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[28,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[28,69] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[32,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[39,50] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[41,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[41,61] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[46,28] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[54,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[54,77] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable about of type com.arafath.portfolio.entity.About
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[63,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[68,21] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[77,58] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[79,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[79,61] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[84,28] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AboutRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[94,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[94,77] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable about of type com.arafath.portfolio.entity.About
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[104,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[108,21] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[116,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[126,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[130,21] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[136,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[146,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[150,21] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AboutServiceImpl.java:[160,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AboutServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[33,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[33,68] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[35,53] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[36,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[36,64] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[37,78] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[40,50] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[41,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[41,61] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[42,75] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[46,57] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[49,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[49,73] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[57,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[61,51] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[64,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[64,64] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[65,78] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[68,48] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[71,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[71,61] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[72,75] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[76,57] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.AdminRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[79,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[79,73] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable admin of type com.arafath.portfolio.entity.Admin
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[88,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[92,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[101,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[105,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[115,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[120,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/AdminServiceImpl.java:[126,21] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.AdminServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[31,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[31,65] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[33,66] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[34,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[34,74] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[35,81] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[41,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[41,76] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable category of type com.arafath.portfolio.entity.BlogCategory
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[49,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[53,74] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[54,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[54,74] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[55,81] cannot find symbol
+[ERROR]   symbol:   method getName()
+[ERROR]   location: variable request of type com.arafath.portfolio.dto.request.BlogCategoryRequest
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[61,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[61,76] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable category of type com.arafath.portfolio.entity.BlogCategory
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[70,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] /C:/Users/arafa/Desktop/Portfolio/backend/src/main/java/com/arafath/portfolio/service/impl/BlogCategoryServiceImpl.java:[74,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.arafath.portfolio.service.impl.BlogCategoryServiceImpl
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

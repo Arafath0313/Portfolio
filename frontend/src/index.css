@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.14), transparent 26%),
+    radial-gradient(circle at top right, rgba(245, 158, 11, 0.1), transparent 22%),
+    #f8fafc;
+  color: #0f172a;
+  font-family: Aptos, "Segoe UI", "Trebuchet MS", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top left, rgba(45, 212, 191, 0.12), transparent 26%),
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.1), transparent 22%),
+    #020617;
+  color: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: rgba(20, 184, 166, 0.28);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid #14b8a6;
+  outline-offset: 3px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.prose-portfolio {
+  color: inherit;
+}
+
+.prose-portfolio p + p {
+  margin-top: 1rem;
+}
+
+.prose-portfolio h2,
+.prose-portfolio h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.prose-portfolio ul,
+.prose-portfolio ol {
+  margin-top: 1rem;
+  margin-left: 1.25rem;
+}
+
+.prose-portfolio li + li {
+  margin-top: 0.5rem;
+}
+
+.prose-portfolio a {
+  color: #0f766e;
+  text-decoration: underline;
+}
+
+.dark .prose-portfolio a {
+  color: #5eead4;
+}
