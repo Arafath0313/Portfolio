@@ -46,7 +46,9 @@ portfolio:
     email: ${ADMIN_EMAIL:admin@example.com}
 
 storage:
-  upload-dir: ${STORAGE_UPLOAD_DIR:uploads}
+  # On Railway: mount a Volume at /data/uploads and set STORAGE_UPLOAD_DIR=/data/uploads
+  # Local dev:  set STORAGE_UPLOAD_DIR=uploads  (relative, resolved to CWD/uploads)
+  upload-dir: ${STORAGE_UPLOAD_DIR:/data/uploads}
 
   allowed-image-types:
     - image/jpeg

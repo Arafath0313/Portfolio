@@ -8,6 +8,7 @@ import lombok.Getter;
  */
 @Getter
 public enum FileCategory {
+    ABOUT("about"),
     RESUME("resumes"),
     PROJECT("projects"),
     CERTIFICATE("certificates"),

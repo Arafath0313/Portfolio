@@ -1,0 +1,5 @@
+# ─── Local Development Overrides ───────────────────────────────────────────────
+# Override the upload directory to the local relative 'uploads/' folder.
+# This keeps local files in backend/uploads/ exactly as before.
+storage:
+  upload-dir: uploads

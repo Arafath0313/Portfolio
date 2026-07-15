@@ -2,16 +2,24 @@ package com.arafath.portfolio.service.impl;
 
 import com.arafath.portfolio.dto.request.AboutRequest;
 import com.arafath.portfolio.dto.response.AboutResponse;
+import com.arafath.portfolio.entity.About;
 import com.arafath.portfolio.exception.DuplicateResourceException;
 import com.arafath.portfolio.exception.ResourceNotFoundException;
 import com.arafath.portfolio.mapper.AboutMapper;
 import com.arafath.portfolio.repository.AboutRepository;
 import com.arafath.portfolio.service.interfaces.AboutService;
+import com.arafath.portfolio.storage.dto.FileUploadResponse;
+import com.arafath.portfolio.storage.dto.StorageResult;
+import com.arafath.portfolio.storage.enums.FileCategory;
+import com.arafath.portfolio.storage.service.FileStorageService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.arafath.portfolio.entity.About;
+import org.springframework.util.StringUtils;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.time.LocalDateTime;
 
 @Slf4j
 @Service
@@ -21,6 +29,7 @@ public class AboutServiceImpl implements AboutService {
 
     private final AboutRepository aboutRepository;
     private final AboutMapper aboutMapper;
+    private final FileStorageService fileStorageService;
 
     @Override
     public AboutResponse create(AboutRequest request) {
@@ -53,7 +62,7 @@ public class AboutServiceImpl implements AboutService {
 
         log.info("About information created successfully with ID: {}", about.getId());
 
-        return aboutMapper.toResponse(about);
+        return mapToResponse(about);
     }
 
 
@@ -62,7 +71,6 @@ public class AboutServiceImpl implements AboutService {
 
         log.info("Updating About information with ID: {}", id);
 
-        // Check whether the About record exists
         About about = aboutRepository.findById(id)
                 .orElseThrow(() -> {
                     log.warn("About information not found with ID: {}", id);
@@ -73,7 +81,6 @@ public class AboutServiceImpl implements AboutService {
                     );
                 });
 
-        // Check duplicate email (excluding the current record)
         if (aboutRepository.existsByEmailAndIdNot(request.getEmail(), id)) {
 
             log.warn("Duplicate email detected: {}", request.getEmail());
@@ -85,15 +92,13 @@ public class AboutServiceImpl implements AboutService {
             );
         }
 
-        // Update entity using MapStruct
         aboutMapper.updateEntityFromRequest(request, about);
 
-        // Save updated entity
         about = aboutRepository.save(about);
 
-        log.info("About information updated successfully with ID: {}", about.getId());
+        log.info("About information updated successfully with ID: {}", id);
 
-        return aboutMapper.toResponse(about);
+        return mapToResponse(about);
     }
 
 
@@ -115,7 +120,7 @@ public class AboutServiceImpl implements AboutService {
 
         log.info("About information retrieved successfully with ID: {}", id);
 
-        return aboutMapper.toResponse(about);
+        return mapToResponse(about);
     }
 
 
@@ -135,9 +140,8 @@ public class AboutServiceImpl implements AboutService {
 
         log.info("Portfolio About information retrieved successfully.");
 
-        return aboutMapper.toResponse(about);
+        return mapToResponse(about);
     }
-
 
 
     @Override
@@ -158,5 +162,51 @@ public class AboutServiceImpl implements AboutService {
         aboutRepository.delete(about);
 
         log.info("About information deleted successfully with ID: {}", id);
+    }
+
+    @Override
+    public FileUploadResponse uploadProfileImage(Long id, MultipartFile file) {
+        log.info("Uploading profile image for About ID: {}", id);
+
+        About about = aboutRepository.findById(id)
+                .orElseThrow(() -> {
+                    log.warn("About information not found with ID: {}", id);
+                    return new ResourceNotFoundException("About", "id", id);
+                });
+
+        // Replace existing image (or store new if none) under the ABOUT category folder
+        StorageResult storageResult = fileStorageService.replace(
+                about.getProfileImage(), file, FileCategory.ABOUT
+        );
+
+        about.setProfileImage(storageResult.getRelativePath());
+        aboutRepository.save(about);
+
+        log.info("Profile image updated successfully for About ID: {}", id);
+
+        return FileUploadResponse.builder()
+                .filename(storageResult.getFilename())
+                .originalFilename(storageResult.getOriginalFilename())
+                .contentType(storageResult.getContentType())
+                .size(storageResult.getSize())
+                .url(storageResult.getUrl())
+                .uploadedAt(LocalDateTime.now())
+                .build();
+    }
+
+    /**
+     * Maps About entity to response DTO, resolving media paths to public /media/ URLs.
+     */
+    private AboutResponse mapToResponse(About about) {
+        AboutResponse response = aboutMapper.toResponse(about);
+        if (response != null) {
+            if (StringUtils.hasText(about.getProfileImage())) {
+                response.setProfileImage(fileStorageService.generateUrl(about.getProfileImage()));
+            }
+            if (StringUtils.hasText(about.getCoverImage())) {
+                response.setCoverImage(fileStorageService.generateUrl(about.getCoverImage()));
+            }
+        }
+        return response;
     }
 }

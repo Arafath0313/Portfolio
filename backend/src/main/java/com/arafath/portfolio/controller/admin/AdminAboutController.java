@@ -4,6 +4,7 @@ import com.arafath.portfolio.common.response.ApiResponse;
 import com.arafath.portfolio.dto.request.AboutRequest;
 import com.arafath.portfolio.dto.response.AboutResponse;
 import com.arafath.portfolio.service.interfaces.AboutService;
+import com.arafath.portfolio.storage.dto.FileUploadResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
@@ -11,6 +12,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequiredArgsConstructor
@@ -77,6 +79,30 @@ public class AdminAboutController {
 
         return ResponseEntity.ok(
                 ApiResponse.success("About information deleted successfully.")
+        );
+    }
+
+    /**
+     * Uploads or replaces the profile image for the About record.
+     * Stores the file under uploads/about/ and saves the relative path in the DB.
+     *
+     * @param id   About record identifier
+     * @param file the profile image file (JPEG, PNG, WebP)
+     * @return response carrying upload details and the public /media/ URL
+     */
+    @PostMapping("/{id}/profile-image")
+    @Operation(summary = "Upload/Replace Profile Image")
+    public ResponseEntity<ApiResponse<FileUploadResponse>> uploadProfileImage(
+            @PathVariable Long id,
+            @RequestParam("file") MultipartFile file) {
+
+        FileUploadResponse response = aboutService.uploadProfileImage(id, file);
+
+        return ResponseEntity.ok(
+                ApiResponse.success(
+                        "Profile image uploaded successfully.",
+                        response
+                )
         );
     }
 
