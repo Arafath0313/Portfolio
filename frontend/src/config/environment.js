@@ -2,9 +2,9 @@ const environment = {
   APP_NAME: "Personal Portfolio",
 
   API: {
-    HOST: "http://localhost:8080",
+    HOST: import.meta.env.VITE_API_BASE_URL,
     VERSION: "/api/v1",
-    BASE_URL: "http://localhost:8080/api/v1",
+    BASE_URL: `${import.meta.env.VITE_API_BASE_URL}/api/v1`,
     TIMEOUT: 15000,
   },
 
