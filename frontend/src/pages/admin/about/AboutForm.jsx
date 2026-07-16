@@ -6,11 +6,12 @@ import TextField from "../../../components/form/TextField";
 import Textarea from "../../../components/form/Textarea";
 import Loader from "../../../components/common/Loader";
 import ErrorState from "../../../components/common/ErrorState";
+import ImageUploader from "../../../components/upload/ImageUploader";
 import useFormWithValidation from "../../../hooks/useFormWithValidation";
 import { aboutSchema } from "../../../schemas";
 import aboutService from "../../../services/aboutService";
 import { getApiError } from "../../../utils/apiHelpers";
-import { notifySuccess } from "../../../utils/toast";
+import { notifySuccess, notifyError } from "../../../utils/toast";
 
 const defaultValues = {
   fullName: "",
@@ -31,9 +32,14 @@ const AboutForm = () => {
   const [loading, setLoading] = useState(isEdit);
   const [submitting, setSubmitting] = useState(false);
   const [loadError, setLoadError] = useState(null);
+  const [selectedProfileImage, setSelectedProfileImage] = useState(null);
+  const [selectedCoverImage, setSelectedCoverImage] = useState(null);
 
-  const { register, handleSubmit, reset, formState: { errors }, applyBackendErrors } =
+  const { register, handleSubmit, reset, setValue, watch, formState: { errors }, applyBackendErrors } =
     useFormWithValidation(aboutSchema, defaultValues);
+
+  const profileImageUrl = watch("profileImage");
+  const coverImageUrl = watch("coverImage");
 
   useEffect(() => {
     if (!isEdit) return;
@@ -44,19 +50,74 @@ const AboutForm = () => {
     if (submitting) return;
     setSubmitting(true);
     try {
+      let savedId = id;
       if (isEdit) {
         await aboutService.update(id, data);
         notifySuccess("Profile updated successfully.");
       } else {
-        await aboutService.create(data);
+        const created = await aboutService.create(data);
+        savedId = created.id;
         notifySuccess("Profile created successfully.");
       }
+
+      let imagesUploaded = false;
+      if (selectedProfileImage) {
+        await aboutService.uploadProfileImage(savedId, selectedProfileImage);
+        imagesUploaded = true;
+      }
+      if (selectedCoverImage) {
+        await aboutService.uploadCoverImage(savedId, selectedCoverImage);
+        imagesUploaded = true;
+      }
+      
+      if (imagesUploaded) {
+        notifySuccess("Images uploaded successfully.");
+      }
+
       navigate("/admin/about");
     } catch (err) {
       applyBackendErrors(err);
     } finally {
       setSubmitting(false);
     }
+  };
+
+  const handleProfileImageSelect = async (file) => {
+    if (file.size > 5 * 1024 * 1024) {
+      notifyError("File size must be less than 5MB.");
+      throw new Error("File size exceeded");
+    }
+    const validTypes = ["image/jpeg", "image/png", "image/webp"];
+    if (!validTypes.includes(file.type)) {
+      notifyError("Invalid file type. Only JPG, PNG, and WEBP are allowed.");
+      throw new Error("Invalid file type");
+    }
+    setSelectedProfileImage(file);
+    return Promise.resolve();
+  };
+
+  const handleProfileImageRemove = () => {
+    setSelectedProfileImage(null);
+    setValue("profileImage", "");
+  };
+
+  const handleCoverImageSelect = async (file) => {
+    if (file.size > 5 * 1024 * 1024) {
+      notifyError("File size must be less than 5MB.");
+      throw new Error("File size exceeded");
+    }
+    const validTypes = ["image/jpeg", "image/png", "image/webp"];
+    if (!validTypes.includes(file.type)) {
+      notifyError("Invalid file type. Only JPG, PNG, and WEBP are allowed.");
+      throw new Error("Invalid file type");
+    }
+    setSelectedCoverImage(file);
+    return Promise.resolve();
+  };
+
+  const handleCoverImageRemove = () => {
+    setSelectedCoverImage(null);
+    setValue("coverImage", "");
   };
 
   if (loading) return <div className="flex min-h-[40vh] items-center justify-center"><Loader size="lg" /></div>;
@@ -83,16 +144,29 @@ const AboutForm = () => {
         <FormField label="Address" name="address" error={errors.address}>
           <TextField id="address" error={errors.address} {...register("address")} />
         </FormField>
-        <FormField label="Profile Image URL" name="profileImage" error={errors.profileImage}>
-          <TextField id="profileImage" error={errors.profileImage} {...register("profileImage")} />
-        </FormField>
-        <FormField label="Cover Image URL" name="coverImage" error={errors.coverImage}>
-          <TextField id="coverImage" error={errors.coverImage} {...register("coverImage")} />
-        </FormField>
         <div className="md:col-span-2">
           <FormField label="Bio" name="bio" required error={errors.bio}>
             <Textarea id="bio" rows={8} error={errors.bio} {...register("bio")} />
           </FormField>
+        </div>
+      </div>
+
+      <div className="border-t border-slate-200 pt-6 dark:border-slate-700 mt-6 grid gap-6 md:grid-cols-2">
+        <div>
+          <h3 className="mb-4 text-lg font-semibold text-slate-900 dark:text-white">Profile Image</h3>
+          <ImageUploader
+            value={profileImageUrl}
+            onUpload={handleProfileImageSelect}
+            onRemove={handleProfileImageRemove}
+          />
+        </div>
+        <div>
+          <h3 className="mb-4 text-lg font-semibold text-slate-900 dark:text-white">Cover Image</h3>
+          <ImageUploader
+            value={coverImageUrl}
+            onUpload={handleCoverImageSelect}
+            onRemove={handleCoverImageRemove}
+          />
         </div>
       </div>
     </AdminFormLayout>

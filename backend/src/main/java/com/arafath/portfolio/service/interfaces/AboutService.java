@@ -41,4 +41,13 @@ public interface AboutService {
      */
     FileUploadResponse uploadProfileImage(Long id, MultipartFile file);
 
+    /**
+     * Uploads or replaces the cover image for the About record.
+     *
+     * @param id   About record identifier
+     * @param file cover image file (JPEG, PNG, WebP)
+     * @return upload result containing the public URL
+     */
+    FileUploadResponse uploadCoverImage(Long id, MultipartFile file);
+
 }

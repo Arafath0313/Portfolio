@@ -106,4 +106,28 @@ public class AdminAboutController {
         );
     }
 
+    /**
+     * Uploads or replaces the cover image for the About record.
+     * Stores the file under uploads/about/ and saves the relative path in the DB.
+     *
+     * @param id   About record identifier
+     * @param file the cover image file (JPEG, PNG, WebP)
+     * @return response carrying upload details and the public /media/ URL
+     */
+    @PostMapping("/{id}/cover-image")
+    @Operation(summary = "Upload/Replace Cover Image")
+    public ResponseEntity<ApiResponse<FileUploadResponse>> uploadCoverImage(
+            @PathVariable Long id,
+            @RequestParam("file") MultipartFile file) {
+
+        FileUploadResponse response = aboutService.uploadCoverImage(id, file);
+
+        return ResponseEntity.ok(
+                ApiResponse.success(
+                        "Cover image uploaded successfully.",
+                        response
+                )
+        );
+    }
+
 }

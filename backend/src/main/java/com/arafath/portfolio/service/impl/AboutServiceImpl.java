@@ -194,6 +194,36 @@ public class AboutServiceImpl implements AboutService {
                 .build();
     }
 
+    @Override
+    public FileUploadResponse uploadCoverImage(Long id, MultipartFile file) {
+        log.info("Uploading cover image for About ID: {}", id);
+
+        About about = aboutRepository.findById(id)
+                .orElseThrow(() -> {
+                    log.warn("About information not found with ID: {}", id);
+                    return new ResourceNotFoundException("About", "id", id);
+                });
+
+        // Replace existing image (or store new if none) under the ABOUT category folder
+        StorageResult storageResult = fileStorageService.replace(
+                about.getCoverImage(), file, FileCategory.ABOUT
+        );
+
+        about.setCoverImage(storageResult.getRelativePath());
+        aboutRepository.save(about);
+
+        log.info("Cover image updated successfully for About ID: {}", id);
+
+        return FileUploadResponse.builder()
+                .filename(storageResult.getFilename())
+                .originalFilename(storageResult.getOriginalFilename())
+                .contentType(storageResult.getContentType())
+                .size(storageResult.getSize())
+                .url(storageResult.getUrl())
+                .uploadedAt(LocalDateTime.now())
+                .build();
+    }
+
     /**
      * Maps About entity to response DTO, resolving media paths to public /media/ URLs.
      */
