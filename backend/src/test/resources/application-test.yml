@@ -1,0 +1,59 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;NON_KEYWORDS=value
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  mail:
+    host: localhost
+    port: 3025
+    username: test
+    password: test
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
+
+portfolio:
+  admin:
+    username: admin
+    password: admin123
+    email: admin@example.com
+
+storage:
+  upload-dir: target/test-uploads
+  allowed-image-types:
+    - image/jpeg
+    - image/png
+    - image/webp
+  allowed-document-types:
+    - application/pdf
+  allowed-image-extensions:
+    - jpg
+    - jpeg
+    - png
+    - webp
+  allowed-document-extensions:
+    - pdf
+
+mail:
+  from: test@example.com
+  owner: test@example.com
+
+jwt:
+  secret: testSecretKey12345678901234567890123456789012345678901234567890AB
+  expiration: 86400000
+
+logging:
+  level:
+    root: WARN
+    com.arafath.portfolio: INFO

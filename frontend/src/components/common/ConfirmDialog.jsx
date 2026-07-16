@@ -62,7 +62,7 @@ const ConfirmDialog = ({
       />
 
       {/* Panel */}
-      <div className="relative w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl dark:bg-slate-800">
+      <div className="relative w-full max-w-md max-h-[90vh] overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl dark:bg-slate-800">
         {/* Icon */}
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-100 dark:bg-red-950/40">
           <FiAlertTriangle className="h-6 w-6 text-red-600 dark:text-red-400" />

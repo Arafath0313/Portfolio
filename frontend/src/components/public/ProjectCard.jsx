@@ -84,7 +84,7 @@ const ProjectCard = ({ project }) => {
           ) : null}
         </div>
 
-        <div className="mt-6 flex flex-1 items-end justify-between gap-3">
+        <div className="mt-6 flex flex-1 flex-wrap items-end justify-between gap-3">
           <Link
             to={getProjectRoute(project)}
             className="inline-flex items-center gap-2 text-sm font-semibold text-slate-950 transition group-hover:text-teal-700 dark:text-white dark:group-hover:text-teal-300"

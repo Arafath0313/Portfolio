@@ -115,7 +115,7 @@ const EducationGalleryForm = () => {
             <Link to={`/admin/education/${educationId}/galleries`}>
               <Button type="button" variant="secondary">Cancel</Button>
             </Link>
-            <Button type="submit" isLoading={isSubmitting}>
+            <Button type="submit" loading={isSubmitting}>
               <FiSave className="mr-2 h-4 w-4" />
               Save
             </Button>

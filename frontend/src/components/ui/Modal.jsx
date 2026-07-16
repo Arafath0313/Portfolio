@@ -38,7 +38,7 @@ const Modal = ({ isOpen, onClose, title, children, size = "md" }) => {
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
             className={clsx(
-              "relative w-full rounded-2xl bg-white p-6 shadow-2xl dark:bg-slate-900 dark:border dark:border-slate-800",
+              "relative w-full max-h-[90vh] overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl dark:bg-slate-900 dark:border dark:border-slate-800",
               sizes[size]
             )}
           >

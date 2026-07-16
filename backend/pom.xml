@@ -94,6 +94,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- H2 in-memory database for tests -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <!-- DevTools -->
 
         <dependency>
@@ -168,6 +175,7 @@
 
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                    <useIncrementalCompilation>false</useIncrementalCompilation>
 
                     <annotationProcessorPaths>
 
