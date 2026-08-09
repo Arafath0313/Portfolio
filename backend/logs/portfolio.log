@@ -4073,3 +4073,817 @@ Unconditional classes:
 2026-07-16T13:37:10.930+05:30  INFO 19488 --- [portfolio] [restartedMain] c.a.portfolio.PortfolioApplication       : Starting PortfolioApplication using Java 21.0.9 with PID 19488 (C:\Users\arafa\Desktop\Portfolio\backend\target\classes started by arafa in C:\Users\arafa\Desktop\Portfolio\backend)
 2026-07-16T13:37:10.931+05:30 DEBUG 19488 --- [portfolio] [restartedMain] c.a.portfolio.PortfolioApplication       : Running with Spring Boot v3.5.3, Spring v6.2.8
 2026-07-16T13:37:10.931+05:30  INFO 19488 --- [portfolio] [restartedMain] c.a.portfolio.PortfolioApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-16T13:37:11.711+05:30  INFO 19488 --- [portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-16T13:37:11.997+05:30  INFO 19488 --- [portfolio] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 282 ms. Found 17 JPA repository interfaces.
+2026-07-16T13:37:12.281+05:30  INFO 19488 --- [portfolio] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-16T13:37:12.281+05:30  INFO 19488 --- [portfolio] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-16T13:37:12.281+05:30  INFO 19488 --- [portfolio] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-07-16T13:37:12.311+05:30  INFO 19488 --- [portfolio] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-16T13:37:12.311+05:30  INFO 19488 --- [portfolio] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1377 ms
+2026-07-16T13:37:12.393+05:30  INFO 19488 --- [portfolio] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-16T13:37:12.397+05:30  INFO 19488 --- [portfolio] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-16T13:37:12.411+05:30  INFO 19488 --- [portfolio] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-16T13:37:12.412+05:30  INFO 19488 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-07-16T13:37:12.431+05:30  INFO 19488 --- [portfolio] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6121141
+2026-07-16T13:37:12.431+05:30  INFO 19488 --- [portfolio] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-07-16T13:37:12.433+05:30  INFO 19488 --- [portfolio] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-16T13:37:13.143+05:30  INFO 19488 --- [portfolio] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-16T13:37:13.376+05:30  INFO 19488 --- [portfolio] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-16T13:37:13.535+05:30 DEBUG 19488 --- [portfolio] [restartedMain] c.a.p.s.filter.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-07-16T13:37:14.897+05:30  INFO 19488 --- [portfolio] [restartedMain] c.a.portfolio.mail.config.MailConfig     : Validating SMTP mail configuration...
+2026-07-16T13:37:14.897+05:30  INFO 19488 --- [portfolio] [restartedMain] c.a.portfolio.mail.config.MailConfig     : SMTP mail configuration validated successfully. Sender: [arafathm0307@gmail.com], Owner notifications: [arafathm0307@gmail.com]
+2026-07-16T13:37:14.932+05:30  INFO 19488 --- [portfolio] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-07-16T13:37:14.936+05:30  WARN 19488 --- [portfolio] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-07-16T13:37:14.947+05:30  INFO 19488 --- [portfolio] [restartedMain] c.a.p.s.config.StorageConfiguration      : Storage initialization. Storage Root: C:\data\uploads
+2026-07-16T13:37:14.951+05:30  INFO 19488 --- [portfolio] [restartedMain] c.a.p.s.config.StorageConfiguration      : Storage folders initialized successfully.
+2026-07-16T13:37:15.637+05:30  INFO 19488 --- [portfolio] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-16T13:37:15.671+05:30  INFO 19488 --- [portfolio] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-16T13:37:15.679+05:30  INFO 19488 --- [portfolio] [restartedMain] c.a.portfolio.PortfolioApplication       : Started PortfolioApplication in 4.812 seconds (process running for 39.739)
+2026-07-16T13:37:15.694+05:30  INFO 19488 --- [portfolio] [restartedMain] c.a.p.s.initializer.AdminInitializer     : Default admin initialization skipped because admin records already exist.
+2026-07-16T13:37:15.708+05:30  INFO 19488 --- [portfolio] [restartedMain] c.arafath.portfolio.seeder.SkillSeeder   : Populating skills...
+2026-07-16T13:37:15.931+05:30  INFO 19488 --- [portfolio] [restartedMain] c.arafath.portfolio.seeder.SkillSeeder   : Skill population completed.
+2026-07-16T13:37:15.934+05:30  INFO 19488 --- [portfolio] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,?; SearchStrategy: all) found beans of type 'org.springframework.security.authentication.AuthenticationManager' authenticationManager and found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' customUserDetailsService and found beans of type 'org.springframework.security.authentication.AuthenticationProvider' authenticationProvider (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+         - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'spring.security.user.password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'spring.security.user.name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2026-07-16T13:37:19.132+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-16T13:37:19.134+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-16T13:37:19.137+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-07-16T13:37:19.227+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T13:37:19.227+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T13:37:19.227+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T13:37:19.227+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T13:37:19.227+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T13:37:19.278+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T13:37:19.318+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T13:37:19.329+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T13:37:19.333+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T13:37:19.680+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/25ba60b3-dfff-4bfe-8d96-771fea177bca.png.]
+2026-07-16T13:37:19.680+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/00f455b8-39ac-4f5e-90f6-ac8b284666a2.png.]
+2026-07-16T13:37:20.581+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/60df57c8-4c44-4bda-b308-9c4d5daa0c7f.png.]
+2026-07-16T13:37:20.581+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/744dc855-8fa2-45d8-aeff-9c02363f04ae.png.]
+2026-07-16T13:37:20.581+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/67ecb310-adb7-4cc3-b332-2a54e8b01a8c.png.]
+2026-07-16T13:37:21.101+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource certificates/a89c2510-c17e-42cf-9c18-a2e5e6bb68bb.png.]
+2026-07-16T13:37:21.101+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource certificates/3adb4e7e-d6aa-4dd7-9ec8-b6f5f6fd7187.png.]
+2026-07-16T13:37:21.101+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource certificates/99168ebf-f533-47fb-b7ac-4cf7fdba9da0.jpeg.]
+2026-07-16T13:40:15.432+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T13:40:15.433+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T13:40:15.434+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T13:40:15.444+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T13:40:15.447+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T13:40:15.447+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T13:40:15.451+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T13:40:15.468+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T13:40:15.481+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T13:40:15.482+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T13:40:15.511+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T13:40:15.511+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T13:40:15.511+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T13:40:15.511+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T13:40:15.512+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T13:40:15.527+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T13:40:15.537+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T13:40:15.548+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T13:40:15.550+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T13:40:15.552+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T13:40:15.563+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T13:40:15.577+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T13:40:15.593+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T13:40:15.592+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T13:40:15.595+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T13:40:15.597+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T13:40:15.599+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T13:40:15.607+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T13:40:15.644+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T13:40:15.654+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T13:40:15.659+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T13:40:15.671+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T13:40:15.688+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T13:40:15.698+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T13:40:15.922+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T13:40:15.922+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T13:40:15.984+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T13:40:28.159+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/00f455b8-39ac-4f5e-90f6-ac8b284666a2.png.]
+2026-07-16T13:40:28.630+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/25ba60b3-dfff-4bfe-8d96-771fea177bca.png.]
+2026-07-16T13:40:31.142+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/60df57c8-4c44-4bda-b308-9c4d5daa0c7f.png.]
+2026-07-16T13:40:31.348+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/67ecb310-adb7-4cc3-b332-2a54e8b01a8c.png.]
+2026-07-16T13:40:31.565+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/744dc855-8fa2-45d8-aeff-9c02363f04ae.png.]
+2026-07-16T13:40:31.714+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource certificates/99168ebf-f533-47fb-b7ac-4cf7fdba9da0.jpeg.]
+2026-07-16T13:40:31.885+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource certificates/3adb4e7e-d6aa-4dd7-9ec8-b6f5f6fd7187.png.]
+2026-07-16T13:40:31.985+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource certificates/a89c2510-c17e-42cf-9c18-a2e5e6bb68bb.png.]
+2026-07-16T14:01:12.750+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T14:01:12.750+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T14:01:12.750+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T14:01:12.750+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T14:01:12.750+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T14:01:12.751+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T14:01:12.758+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T14:01:12.758+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T14:01:12.759+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T14:01:12.759+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T14:01:12.761+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T14:01:12.763+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T14:01:12.768+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T14:01:12.768+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T14:01:12.773+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T14:01:12.774+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T14:01:12.781+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T14:01:13.122+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T14:01:13.122+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T14:01:13.122+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T14:01:13.123+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T14:01:13.123+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T14:01:13.126+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T14:01:13.135+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T14:01:13.135+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T14:01:13.136+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T14:01:13.154+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T14:01:13.154+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T14:01:13.179+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T14:01:13.182+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T14:01:13.182+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T14:01:13.183+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T14:01:13.184+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T14:01:13.185+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T14:01:13.187+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T14:01:13.187+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T14:01:13.191+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T14:01:13.194+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T14:01:13.196+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T14:01:13.206+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T14:01:13.210+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T14:01:13.212+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T14:01:13.213+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-1] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T14:01:13.215+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T14:01:13.216+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T14:01:13.221+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T14:01:13.221+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T14:01:13.221+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T14:01:13.221+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T14:01:13.223+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T14:01:13.229+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T14:01:13.235+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T14:01:13.235+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T14:01:13.261+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T14:40:48.674+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T14:40:48.674+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T14:40:48.674+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T14:40:48.674+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T14:40:48.674+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T14:40:48.676+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T14:40:48.680+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T14:40:48.680+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T14:40:48.683+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T14:40:48.687+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T14:40:48.691+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T14:40:48.694+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T14:40:48.695+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T14:40:48.695+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T14:40:48.701+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T14:40:48.703+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T14:40:48.710+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T14:40:48.743+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T14:40:48.744+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T14:40:48.746+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T14:40:48.751+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T14:40:48.751+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T14:40:48.755+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T14:40:48.756+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T14:40:48.756+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T14:40:48.761+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T14:40:48.761+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T14:40:48.769+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T14:40:48.769+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T14:40:48.773+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T14:40:48.776+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T14:40:48.777+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T14:40:48.780+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T14:40:48.782+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T14:40:48.782+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T14:40:48.786+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T14:40:48.793+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T14:40:48.796+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T14:40:48.801+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T14:40:48.802+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T14:40:48.801+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T14:40:48.804+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T14:40:48.808+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T14:40:48.810+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T14:40:48.810+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T14:40:48.812+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T14:40:48.812+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T14:40:48.817+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T14:40:48.817+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T14:40:48.820+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T14:40:48.824+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T14:40:48.857+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T14:40:48.858+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T14:40:48.858+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T16:34:25.356+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T16:34:25.356+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T16:34:25.356+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T16:34:25.356+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T16:34:25.361+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T16:34:25.361+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T16:34:25.393+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T16:34:25.412+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T16:34:25.418+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T16:34:25.422+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T16:34:25.427+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T16:34:25.431+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T16:34:25.446+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T16:34:25.446+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T16:34:25.469+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T16:34:25.469+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T16:34:25.475+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T16:34:25.572+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T16:34:25.588+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T16:34:25.597+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T16:34:25.597+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T16:34:25.615+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T16:34:25.607+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T16:34:25.615+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T16:34:25.625+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T16:34:25.626+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T16:34:25.626+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T16:34:25.665+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T16:34:25.665+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T16:34:25.669+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T16:34:25.677+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T16:34:25.679+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T16:34:25.679+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T16:34:25.680+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T16:34:25.683+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T16:34:25.686+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T16:34:25.692+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T16:34:25.697+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T16:34:25.697+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T16:34:25.715+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T16:34:25.725+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T16:34:25.737+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T16:34:25.737+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T16:34:25.737+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T16:34:25.741+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T16:34:25.741+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T16:34:25.741+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T16:34:25.746+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T16:34:25.754+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T16:34:25.761+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T16:34:25.764+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T16:34:25.778+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T16:34:25.781+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T16:34:25.827+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T16:34:27.861+05:30  WARN 19488 --- [portfolio] [HikariPool-3:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1h52m44s14ms155µs900ns).
+2026-07-16T17:02:22.962+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T17:02:22.970+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T17:02:22.970+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T17:02:22.975+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T17:02:22.975+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T17:02:22.977+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T17:02:22.978+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T17:02:22.979+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T17:02:22.980+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T17:02:22.998+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T17:02:22.986+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T17:02:22.989+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T17:02:22.991+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T17:02:22.993+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T17:02:23.014+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T17:02:22.995+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T17:02:23.001+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T17:02:23.001+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T17:02:23.005+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T17:02:23.005+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T17:02:23.007+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T17:02:23.018+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T17:02:23.018+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-14] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T17:02:23.028+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T17:02:23.020+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T17:02:23.028+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T17:02:23.033+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T17:02:23.036+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T17:02:23.038+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T17:02:23.039+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-14] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T17:02:23.042+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T17:02:23.042+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T17:02:23.050+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T17:02:23.050+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T17:02:23.052+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T17:02:23.056+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T17:02:23.059+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T17:02:23.060+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T17:02:23.064+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T17:02:23.078+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T17:02:23.080+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T17:02:23.086+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T17:02:23.086+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T17:02:23.088+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T17:02:23.090+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T17:02:23.095+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T17:02:23.096+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T17:02:23.099+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T17:02:23.102+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T17:02:23.114+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T17:02:23.115+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-14] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T17:02:23.117+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T17:02:23.123+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T17:02:23.123+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-13] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T17:55:54.962+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T17:55:54.969+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T17:55:54.970+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T17:55:54.972+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T17:55:54.972+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T17:55:54.972+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T17:55:54.986+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T17:55:54.989+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T17:55:54.989+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T17:55:54.995+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T17:55:54.995+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T17:55:54.995+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T17:55:55.012+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T17:55:55.012+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T17:55:55.020+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T17:55:55.020+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T17:55:55.031+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T17:55:55.142+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T17:55:55.147+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T17:55:55.148+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T17:55:55.148+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T17:55:55.149+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T17:55:55.153+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T17:55:55.155+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T17:55:55.157+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T17:55:55.159+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T17:55:55.166+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T17:55:55.167+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-14] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T17:55:55.167+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T17:55:55.173+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-14] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T17:55:55.173+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T17:55:55.173+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T17:55:55.173+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T17:55:55.180+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T17:55:55.180+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T17:55:55.189+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T17:55:55.191+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T17:55:55.191+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T17:55:55.191+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T17:55:55.197+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T17:55:55.197+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T17:55:55.197+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T17:55:55.199+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T17:55:55.207+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T17:55:55.209+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T17:55:55.214+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-14] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T17:55:55.214+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T17:55:55.220+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-7] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T17:55:55.222+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T17:55:55.224+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-14] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T17:55:55.224+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-4] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T17:55:55.270+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/00f455b8-39ac-4f5e-90f6-ac8b284666a2.png.]
+2026-07-16T17:55:55.282+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-13] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/67ecb310-adb7-4cc3-b332-2a54e8b01a8c.png.]
+2026-07-16T17:55:55.283+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/60df57c8-4c44-4bda-b308-9c4d5daa0c7f.png.]
+2026-07-16T17:55:55.283+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/25ba60b3-dfff-4bfe-8d96-771fea177bca.png.]
+2026-07-16T17:55:55.283+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/744dc855-8fa2-45d8-aeff-9c02363f04ae.png.]
+2026-07-16T17:55:55.380+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-11] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T17:55:55.380+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T17:55:55.416+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T17:56:17.559+05:30  WARN 19488 --- [portfolio] [HikariPool-3:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1h21m49s701ms285µs800ns).
+2026-07-16T18:40:25.663+05:30  WARN 19488 --- [portfolio] [HikariPool-3:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=13m7s161ms654µs).
+2026-07-16T18:40:25.999+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T18:40:25.999+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T18:40:26.001+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T18:40:26.001+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T18:40:26.003+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T18:40:26.003+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T18:40:26.017+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T18:40:26.017+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T18:40:26.019+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T18:40:26.021+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T18:40:26.026+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T18:40:26.034+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T18:40:26.034+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T18:40:26.037+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T18:40:26.042+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T18:40:26.042+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T18:40:26.055+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T18:40:26.079+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T18:40:26.079+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T18:40:26.079+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T18:40:26.081+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T18:40:26.085+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T18:40:26.085+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T18:40:26.089+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T18:40:26.091+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T18:40:26.095+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T18:40:26.097+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T18:40:26.099+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T18:40:26.115+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T18:40:26.123+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T18:40:26.123+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T18:40:26.127+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T18:40:26.131+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T18:40:26.133+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T18:40:26.133+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T18:40:26.135+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T18:40:26.135+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T18:40:26.135+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T18:40:26.139+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T18:40:26.153+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T18:40:26.155+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T18:40:26.159+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T18:40:26.159+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T18:40:26.163+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T18:40:26.163+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T18:40:26.163+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T18:40:26.165+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T18:40:26.171+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T18:40:26.176+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-12] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T18:40:26.176+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T18:40:26.176+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T18:40:26.183+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T18:40:26.183+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T18:40:26.193+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T19:45:33.024+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T19:45:33.025+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T19:45:33.025+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T19:45:33.037+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T19:45:33.039+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T19:45:33.041+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T19:45:33.080+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T19:45:33.092+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T19:45:33.094+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T19:45:33.094+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T19:45:33.116+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T19:45:33.119+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T19:45:33.138+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T19:45:33.141+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T19:45:33.165+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T19:45:33.172+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T19:45:33.179+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T19:45:33.527+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T19:45:33.555+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T19:45:33.592+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T19:45:33.600+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T19:45:33.617+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T19:45:33.617+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T19:45:33.674+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T19:45:33.687+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T19:45:33.743+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T19:45:33.747+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-15] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T19:45:33.747+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T19:45:33.782+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T19:45:33.789+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T19:45:33.798+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-15] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T19:45:33.807+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T19:45:33.813+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T19:45:33.830+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T19:45:33.834+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T19:45:33.855+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-3] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T19:45:33.890+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T19:45:33.950+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T19:45:34.000+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T19:45:34.017+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-11] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T19:45:34.041+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T19:45:34.053+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T19:45:34.076+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T19:45:34.078+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T19:45:34.082+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T19:45:34.136+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T19:45:34.207+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T19:45:34.236+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T19:45:34.236+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-16] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/25ba60b3-dfff-4bfe-8d96-771fea177bca.png.]
+2026-07-16T19:45:34.236+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/00f455b8-39ac-4f5e-90f6-ac8b284666a2.png.]
+2026-07-16T19:45:34.264+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-11] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/744dc855-8fa2-45d8-aeff-9c02363f04ae.png.]
+2026-07-16T19:45:34.242+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/60df57c8-4c44-4bda-b308-9c4d5daa0c7f.png.]
+2026-07-16T19:45:34.242+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-15] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T19:45:34.273+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T19:45:34.276+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource passions/67ecb310-adb7-4cc3-b332-2a54e8b01a8c.png.]
+2026-07-16T19:45:34.385+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-15] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T19:45:34.385+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T19:45:34.410+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-12] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T19:45:34.414+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T19:45:57.203+05:30  WARN 19488 --- [portfolio] [HikariPool-3:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1h5m31s540ms62µs600ns).
+2026-07-16T20:33:47.860+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T20:33:47.878+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T20:33:47.878+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T20:33:47.880+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T20:33:47.944+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T20:33:47.880+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T20:33:47.996+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T20:33:47.996+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T20:33:48.004+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T20:33:48.056+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T20:33:48.012+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T20:33:48.014+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T20:33:48.014+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T20:33:48.014+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-15] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T20:33:48.019+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T20:33:48.020+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T20:33:48.044+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T20:33:48.044+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T20:33:48.063+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T20:33:48.063+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T20:33:48.077+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T20:33:48.081+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T20:33:48.096+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T20:33:48.096+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T20:33:48.106+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T20:33:48.110+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T20:33:48.140+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T20:33:48.147+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T20:33:48.147+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T20:33:48.154+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T20:33:48.160+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T20:33:48.160+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T20:33:48.172+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T20:33:48.172+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-15] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T20:33:48.180+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T20:33:48.180+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T20:33:48.186+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T20:33:48.186+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T20:33:48.200+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T20:33:48.207+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-15] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T20:33:48.210+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T20:33:48.216+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-10] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T20:33:48.216+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T20:33:48.248+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T20:33:48.252+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T20:33:48.264+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T20:33:48.266+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T20:33:48.268+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T20:33:48.279+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T20:33:48.285+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T20:33:48.294+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T20:33:48.448+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T20:33:48.466+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T20:33:48.460+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-13] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T20:33:51.676+05:30  WARN 19488 --- [portfolio] [HikariPool-3:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=15m23s855ms690µs900ns).
+2026-07-16T21:10:03.010+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:10:03.010+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:10:03.011+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:10:03.011+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:10:03.010+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:10:03.010+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:10:03.016+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:10:03.016+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:10:03.017+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:10:03.017+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:10:03.019+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:10:03.026+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:10:03.027+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:10:03.027+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:10:03.029+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:10:03.033+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:10:03.044+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T21:10:03.142+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T21:10:03.142+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T21:10:03.142+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T21:10:03.144+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T21:10:03.146+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T21:10:03.148+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T21:10:03.148+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T21:10:03.149+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T21:10:03.152+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T21:10:03.160+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T21:10:03.160+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T21:10:03.160+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T21:10:03.163+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T21:10:03.163+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T21:10:03.165+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T21:10:03.165+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T21:10:03.168+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T21:10:03.171+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T21:10:03.174+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:10:03.174+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:10:03.179+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:10:03.181+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:10:03.185+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:10:03.186+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:10:03.186+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:10:03.188+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:10:03.188+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:10:03.193+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:10:03.193+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:10:03.198+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:10:03.206+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:10:03.208+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:10:03.210+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:10:03.213+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:10:03.307+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T21:10:03.307+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T21:10:03.349+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-13] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T21:10:56.379+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:10:56.379+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:10:56.379+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:10:56.379+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:10:56.379+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:10:56.385+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:10:56.398+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:10:56.398+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:10:56.399+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:10:56.399+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:10:56.401+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:10:56.402+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:10:56.409+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:10:56.411+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:10:56.424+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T21:10:56.424+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:10:56.427+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:10:56.535+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T21:10:56.536+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T21:10:56.543+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:10:56.545+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T21:10:56.550+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-20] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T21:10:56.555+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T21:10:56.559+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T21:10:56.564+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T21:10:56.570+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:10:56.583+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T21:10:56.595+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-20] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T21:10:56.600+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:10:56.602+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:10:56.613+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-6] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:10:56.624+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:10:56.639+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T21:10:56.641+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T21:10:56.645+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:10:56.649+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T21:10:56.657+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-2] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T21:10:56.657+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T21:10:56.659+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T21:10:56.660+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:10:56.662+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T21:10:56.674+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T21:10:56.676+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T21:10:56.682+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:10:56.689+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:10:56.705+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-20] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:10:56.726+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:10:56.726+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-12] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T21:10:56.726+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T21:10:56.741+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T21:10:56.750+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:10:56.755+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:10:56.763+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-20] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:10:56.769+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:10:56.789+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/25ba60b3-dfff-4bfe-8d96-771fea177bca.png.]
+2026-07-16T21:10:56.795+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-17] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/00f455b8-39ac-4f5e-90f6-ac8b284666a2.png.]
+2026-07-16T21:11:06.395+05:30  WARN 19488 --- [portfolio] [HikariPool-3:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=16m14s390ms174µs100ns).
+2026-07-16T21:43:30.965+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:43:30.967+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:43:30.967+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:43:30.969+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:43:30.969+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:43:30.969+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:43:30.982+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:43:30.982+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:43:30.982+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:43:30.991+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:43:31.001+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-20] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:43:31.001+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:43:31.003+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:43:31.009+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:43:31.011+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-20] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:43:31.022+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:43:31.041+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-13] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T21:43:31.095+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T21:43:31.098+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T21:43:31.098+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:43:31.099+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T21:43:31.103+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T21:43:31.103+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T21:43:31.106+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:43:31.106+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T21:43:31.111+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T21:43:31.111+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T21:43:31.129+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T21:43:31.131+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:43:31.131+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:43:31.133+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-20] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:43:31.133+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T21:43:31.133+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T21:43:31.139+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:43:31.139+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:43:31.144+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T21:43:31.144+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-20] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:43:31.146+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T21:43:31.149+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T21:43:31.205+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T21:43:31.240+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T21:43:31.240+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:43:31.242+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:43:31.244+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:43:31.244+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-19] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T21:43:31.265+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:43:31.244+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-20] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T21:43:31.251+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T21:43:31.251+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:43:31.254+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T21:43:31.254+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:43:31.269+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:43:31.277+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:43:31.277+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-13] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T21:43:31.359+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-19] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/25ba60b3-dfff-4bfe-8d96-771fea177bca.png.]
+2026-07-16T21:43:31.359+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource projects/00f455b8-39ac-4f5e-90f6-ac8b284666a2.png.]
+2026-07-16T21:43:41.136+05:30  WARN 19488 --- [portfolio] [HikariPool-3:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=13m4s397ms239µs400ns).
+2026-07-16T21:56:21.903+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:56:21.904+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:56:21.904+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:56:21.904+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:56:21.904+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:56:21.904+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:56:21.924+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:56:21.929+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:56:21.932+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:56:21.933+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:56:21.939+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:56:21.941+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:56:21.954+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:56:21.954+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:56:21.970+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:56:21.970+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:56:21.971+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-20] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T21:56:22.057+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T21:56:22.070+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T21:56:22.073+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T21:56:22.078+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:56:22.080+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T21:56:22.087+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T21:56:22.087+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T21:56:22.093+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:56:22.093+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T21:56:22.094+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T21:56:22.094+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T21:56:22.117+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:56:22.119+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-20] c.a.p.service.impl.SkillServiceImpl      : Fetching all skills.
+2026-07-16T21:56:22.119+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:56:22.122+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:56:22.123+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.ProjectServiceImpl    : Fetching all projects.
+2026-07-16T21:56:22.130+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:56:22.133+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-20] c.a.p.service.impl.SkillServiceImpl      : Retrieved 27 skill(s) successfully.
+2026-07-16T21:56:22.144+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:56:22.144+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-5] c.a.p.service.impl.ProjectServiceImpl    : Retrieved 4 project(s) successfully.
+2026-07-16T21:56:22.146+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-17] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:56:22.200+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.AboutServiceImpl      : Fetching portfolio About information.
+2026-07-16T21:56:22.200+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-16] c.a.p.service.impl.PassionServiceImpl    : Fetching all passions.
+2026-07-16T21:56:22.202+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Fetching portfolio resume.
+2026-07-16T21:56:22.202+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Fetching all YouTube videos.
+2026-07-16T21:56:22.202+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Fetching all certifications.
+2026-07-16T21:56:22.208+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Fetching portfolio site settings.
+2026-07-16T21:56:22.214+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-18] c.a.p.service.impl.AboutServiceImpl      : Portfolio About information retrieved successfully.
+2026-07-16T21:56:22.219+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-12] c.a.p.service.impl.ResumeServiceImpl     : Portfolio resume retrieved successfully.
+2026-07-16T21:56:22.220+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-9] c.a.p.s.impl.YouTubeVideoServiceImpl     : Retrieved 0 YouTube video(s) successfully.
+2026-07-16T21:56:22.222+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-8] c.a.p.s.impl.CertificationServiceImpl    : Retrieved 8 certification(s) successfully.
+2026-07-16T21:56:22.230+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-20] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logos/logo.png.]
+2026-07-16T21:56:22.232+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-13] c.a.p.s.impl.SiteSettingServiceImpl      : Portfolio site settings retrieved successfully.
+2026-07-16T21:56:22.241+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.SocialLinkServiceImpl       : Fetching all social links.
+2026-07-16T21:56:22.251+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource about/profile.png.]
+2026-07-16T21:56:22.254+05:30  INFO 19488 --- [portfolio] [http-nio-8080-exec-19] c.a.p.s.impl.SocialLinkServiceImpl       : Retrieved 7 social link(s) successfully.
+2026-07-16T21:56:22.273+05:30  WARN 19488 --- [portfolio] [http-nio-8080-exec-17] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicons/favicon.ico.]
+2026-07-16T21:56:35.254+05:30  WARN 19488 --- [portfolio] [HikariPool-3:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1m23s919ms904µs800ns).
